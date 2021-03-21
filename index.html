@@ -3,10 +3,7 @@
 html{
     font-family: 'Open Sans', sans-serif ;
 }
-header{
-    display: flex;
-    flex-direction: row;
-}
+
 div {
     display:flex;
     flex-direction: row;
@@ -73,14 +70,24 @@ div {
     width: 50%;
 }
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
 }
 li {
-
-
-    
+    display: inline;
+    padding: 5px;
+}
+li a {
+    padding: 1px 3px;
+    font-size:14px;
+    color: black;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
 }
 </style>
 <html>
@@ -100,9 +107,9 @@ li {
         <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi8nIno7r_vAhUM26wKHYP0DJIQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%
         3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a> </li>
 
-        <li> <a href="https://mail.google.com/mail/&ogbl">Gmail</a> </li>
+        <li> <a style="float:right" href="https://mail.google.com/mail/&ogbl">Gmail</a> </li>
 
-        <li> <a  href="https://www.google.com/imghp?hl=en&ogbl">Images</a> </li>
+        <li> <a style="float:right" href="https://www.google.com/imghp?hl=en&ogbl">Images</a> </li>
     </ul>
 </header>
 
