@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<style>
+html{
+    font-family: 'Open Sans', sans-serif ;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+    
+
+#searchbar {
+    background-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;  
+    width: 500px;
+    height: 35px;
+    
+   
+}
+
+#searchbar:focus {
+    outline: none;
+    text-indent: 30px;
+}
+#searchbar:hover{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.104),
+     0 1px 3px rgba(0,0,0,0.104);   
+}
+#logo {
+    height: 150px;
+    width: 375px;
+    position: relative;
+    left: 0px;
+   
+   
+    
+}
+#button-1{  
+    margin-right: 40px;
+    height: 30px;
+    border-style:hidden;
+    border-radius: 4px;
+    background-color: rgba(230, 225, 225, 0.37);
+    
+}
+#button-2{
+    margin-left: 25px;
+    height: 30px;
+    border-style:hidden;
+    border-radius: 4px;
+    background-color: rgba(230, 225, 225, 0.37);
+}
+#button-1:hover, #button-2:hover {
+    border: 0px;
+    border-style:solid;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.104),
+     0 1px 3px rgba(0,0,0,0.104);
+
+}
+
+.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+
+
+    
+}
+</style>
+<html>
+<!-- Link for fonts -->
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    
+</head>
+<!--TODO: Add header text and links-->
+<header class="top">
+    <ul>
+        <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwi8nIno7r_vAhUM26wKHYP0DJIQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%
+        26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a> </li>
+
+        <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi8nIno7r_vAhUM26wKHYP0DJIQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%
+        3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a> </li>
+
+        <li> <a href="https://mail.google.com/mail/&ogbl">Gmail</a> </li>
+
+        <li> <a  href="https://www.google.com/imghp?hl=en&ogbl">Images</a> </li>
+    </ul>
+</header>
+
+<body>
+<!-- Logo -->
+<h1>
+  <a href="https://www.google.com/?pli=1">  <img class ="center" id="logo" src="https://www.google.com/logos/doodles/2021/
+spring-2021-northern-hemisphere-6753651837108891-law.gif"alt="spring Google image"> </a>
+
+</h1>
+
+<!-- Search bar and buttons -->
+<h2>
+    <input = "text" class ="center" id="searchbar">
+    <div>
+        <input id="button-1" type = "submit" name = "Google Search" 
+        value="Google Search">
+        <input id="button-2" type = "submit" name = "I'm Feeling Lucky" 
+        value="I'm Feeling Lucky">
+    </div>
+</h2>
+
+</body>
+
+<!--TODO: Add footer text and links-->
+<footer>    
+
+</footer>
+
+</html>
