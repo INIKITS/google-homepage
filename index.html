@@ -2,6 +2,8 @@
 <style>
 html{
     font-family: 'Open Sans', sans-serif ;
+    height: 100%;
+    margin:0;
 }
 
 div {
@@ -19,10 +21,9 @@ div {
     border-width: 1px;  
     width: 500px;
     height: 35px;
-    
-   
 }
 
+/* indents line / creates shadow on hover of searchbar */
 #searchbar:focus {
     outline: none;
     text-indent: 30px;
@@ -31,6 +32,8 @@ div {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.104),
      0 1px 3px rgba(0,0,0,0.104);   
 }
+
+/* size and align logo */
 #logo {
     height: 150px;
     width: 375px;
@@ -40,6 +43,8 @@ div {
    
     
 }
+
+/* align buttons and add hover effects to buttons */
 #button-1{  
     margin-right: 40px;
     height: 30px;
@@ -63,12 +68,18 @@ div {
 
 }
 
+/* function for centering elements */
 .center {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
+/* adjust position and style header items */
 ul {
     display: inline;
     list-style-type: none;
@@ -83,22 +94,47 @@ li {
 li a {
     padding: 1px 3px;
     font-size:14px;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 li a:hover{
     text-decoration: underline;
 }
+footer {
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:rgb(238, 236, 236);
+   
+   }
+#foot-text {
+    color: rgb(105, 105, 105);
+    padding-left: 25px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.middle-footer img{
+    height: 14px; 
+}
+.middle-footer{
+    margin-left: 325px;
+}
+
+
 </style>
+
+
 <html>
 <!-- Link for fonts -->
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
 </head>
-<!--TODO: Add header text and links-->
+
+
+<!-- header text and links -->
 <header class="top">
     <ul>
         <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwi8nIno7r_vAhUM26wKHYP0DJIQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%
@@ -114,11 +150,11 @@ li a:hover{
 </header>
 
 <body>
+
 <!-- Logo -->
 <h1>
   <a href="https://www.google.com/?pli=1">  <img class ="center" id="logo" src="https://www.google.com/logos/doodles/2021/
 spring-2021-northern-hemisphere-6753651837108891-law.gif"alt="spring Google image"> </a>
-
 </h1>
 
 <!-- Search bar and buttons -->
@@ -134,8 +170,34 @@ spring-2021-northern-hemisphere-6753651837108891-law.gif"alt="spring Google imag
 
 </body>
 
-<!--TODO: Add footer text and links-->
+<!-- TODO: Add footer text and links -->
 <footer>    
+    <ul>
+        <li> <a id="foot-text" style="float:left" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjrrpKovsDvAhUPPq0KHfN6DvMQkdQCCA8&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com
+                        %26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a> </a></li>
+
+        <li> <a id="foot-text" style="float:left" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjrrpKovsDvAhUPPq0KHfN6DvMQktQCCBA&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_med
+                        ium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
+        
+        <li> <a id="foot-text" style="float:left" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+
+        <li> <a id="foot-text" class="middle-footer" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&u
+                        tm_medium=housepromos&utm_campaign=bottom-footer&utm_content="> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6
+                        CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6
+                        GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+                        Carbon neutral since 2007</a></li>
+
+        <li> <a id="foot-text" style="float:right" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja
+                        &uact=8&ved=0ahUKEwjrrpKovsDvAhUPPq0KHfN6DvMQ8awCCBE&url=https%3A%2F%2Fpolic
+                        ies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a></li>  
+
+        <li> <a id="foot-text" style="float:right" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjrrpKovsDvAhUPPq0KHfN6DvMQ8qwCCB
+                        I&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%
+                        3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a></li> 
+
+        <li> <a id="foot-text" style="float:right" href="https://www.google.com/preferences?hl=en&fg=1">Settings</a></li>        
+
+    </ul>
 
 </footer>
 
